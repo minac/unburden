@@ -27,17 +27,25 @@ struct WorryBoxView: View {
                         TextField("What's worrying you?", text: $viewModel.inputText, axis: .vertical)
                             .font(.title3)
                             .multilineTextAlignment(.center)
-                            .textFieldStyle(.plain)
                             .focused($isTextFieldFocused)
                             .submitLabel(.done)
                             .onSubmit {
                                 viewModel.submitWorry()
                             }
-                            .padding(.horizontal, 40)
+                            .padding(16)
+                            .frame(minHeight: 100)
+                            .background {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(.regularMaterial)
+                            }
+                            .padding(.horizontal, 24)
 
-                        Text("Type your worry and let it go")
+                        Text("Tap above to type your worry")
                             .font(.caption)
                             .foregroundStyle(.tertiary)
+                    }
+                    .onTapGesture {
+                        isTextFieldFocused = true
                     }
                 }
             }

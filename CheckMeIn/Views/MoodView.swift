@@ -2,6 +2,8 @@ import SwiftUI
 
 struct MoodView: View {
     @State private var viewModel = MoodViewModel()
+    @State private var selectedMoodThisSession: MoodType?
+    @State private var showConfirmation = false
 
     private let columns = [
         GridItem(.flexible()),
@@ -12,25 +14,22 @@ struct MoodView: View {
 
     var body: some View {
         VStack(spacing: 24) {
-            // Current mood display
-            if let lastMood = viewModel.lastMood {
+            // Header
+            if showConfirmation, let mood = selectedMoodThisSession {
                 VStack(spacing: 8) {
-                    Text("Current mood")
+                    Text("Mood logged!")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
 
-                    Text(lastMood.mood.emoji)
+                    Text(mood.emoji)
                         .font(.system(size: 64))
 
-                    Text(lastMood.mood.label)
+                    Text(mood.label)
                         .font(.title2)
                         .fontWeight(.semibold)
-
-                    Text(lastMood.timestamp.relativeFormatted)
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
                 }
                 .padding(.top, 20)
+                .transition(.opacity)
             } else {
                 VStack(spacing: 8) {
                     Text("How are you feeling?")
@@ -52,9 +51,9 @@ struct MoodView: View {
                 ForEach(MoodType.allCases, id: \.self) { mood in
                     MoodButton(
                         mood: mood,
-                        isSelected: viewModel.lastMood?.mood == mood
+                        isSelected: selectedMoodThisSession == mood
                     ) {
-                        viewModel.selectMood(mood)
+                        selectMood(mood)
                     }
                 }
             }
@@ -62,10 +61,28 @@ struct MoodView: View {
 
             Spacer()
         }
+        .animation(.easeInOut(duration: 0.3), value: showConfirmation)
         .navigationTitle("Mood")
         .navigationBarTitleDisplayMode(.inline)
-        .task {
-            await viewModel.loadMoods()
+        .onAppear {
+            // Reset selection each time view appears
+            selectedMoodThisSession = nil
+            showConfirmation = false
+        }
+    }
+
+    private func selectMood(_ mood: MoodType) {
+        selectedMoodThisSession = mood
+        showConfirmation = true
+        viewModel.selectMood(mood)
+
+        // Reset after 2 seconds so user can select again
+        Task { @MainActor in
+            try? await Task.sleep(for: .seconds(2))
+            withAnimation {
+                selectedMoodThisSession = nil
+                showConfirmation = false
+            }
         }
     }
 }
