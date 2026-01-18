@@ -1,3 +1,5 @@
+<!-- Hosted at: https://gist.github.com/minac/27997e9fa5f779a31d2ada87db2efcb6 -->
+
 # Privacy Policy for Unburden
 
 **Last updated: January 18, 2026**
