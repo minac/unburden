@@ -1,10 +1,10 @@
-# Privacy Policy for Check Me In
+# Privacy Policy for Unburden
 
 **Last updated: January 18, 2026**
 
 ## Overview
 
-Check Me In ("the App") is a personal journaling application that helps you track your worries, gratitude, and mood. Your privacy is important to us, and this policy explains how your data is handled.
+Unburden ("the App") is a personal journaling application that helps you track your worries, gratitude, and mood. Your privacy is important to us, and this policy explains how your data is handled.
 
 ## Data Collection
 

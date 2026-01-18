@@ -37,7 +37,7 @@ struct HomeView: View {
                 .padding(.horizontal, 20)
                 .padding(.vertical, 24)
             }
-            .navigationTitle("Check Me In")
+            .navigationTitle("Unburden")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {

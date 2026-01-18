@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct CheckMeInApp: App {
+struct UnburdenApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()

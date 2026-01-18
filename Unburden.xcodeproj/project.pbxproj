@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001 /* CheckMeInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101; };
+		001 /* UnburdenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101; };
 		002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102; };
 		003 /* WorryBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103; };
 		004 /* GratitudeBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104; };
@@ -24,8 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		100 /* CheckMeIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckMeIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		101 /* CheckMeInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMeInApp.swift; sourceTree = "<group>"; };
+		100 /* Unburden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unburden.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101 /* UnburdenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnburdenApp.swift; sourceTree = "<group>"; };
 		102 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		103 /* WorryBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorryBoxView.swift; sourceTree = "<group>"; };
 		104 /* GratitudeBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeBoxView.swift; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		112 /* GratitudeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeViewModel.swift; sourceTree = "<group>"; };
 		113 /* MoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewModel.swift; sourceTree = "<group>"; };
 		114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		115 /* CheckMeIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckMeIn.entitlements; sourceTree = "<group>"; };
+		115 /* Unburden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Unburden.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,30 +56,30 @@
 		300 = {
 			isa = PBXGroup;
 			children = (
-				301 /* CheckMeIn */,
+				301 /* Unburden */,
 				302 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		301 /* CheckMeIn */ = {
+		301 /* Unburden */ = {
 			isa = PBXGroup;
 			children = (
-				101 /* CheckMeInApp.swift */,
+				101 /* UnburdenApp.swift */,
 				303 /* Models */,
 				304 /* Services */,
 				305 /* ViewModels */,
 				306 /* Views */,
 				307 /* Theme */,
 				114 /* Assets.xcassets */,
-				115 /* CheckMeIn.entitlements */,
+				115 /* Unburden.entitlements */,
 			);
-			path = CheckMeIn;
+			path = Unburden;
 			sourceTree = "<group>";
 		};
 		302 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				100 /* CheckMeIn.app */,
+				100 /* Unburden.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		400 /* CheckMeIn */ = {
+		400 /* Unburden */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 500;
 			buildPhases = (
@@ -146,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = CheckMeIn;
-			productName = CheckMeIn;
-			productReference = 100 /* CheckMeIn.app */;
+			name = Unburden;
+			productName = Unburden;
+			productReference = 100 /* Unburden.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				400 /* CheckMeIn */,
+				400 /* Unburden */,
 			);
 		};
 /* End PBXProject section */
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001 /* CheckMeInApp.swift in Sources */,
+				001 /* UnburdenApp.swift in Sources */,
 				002 /* HomeView.swift in Sources */,
 				003 /* WorryBoxView.swift in Sources */,
 				004 /* GratitudeBoxView.swift in Sources */,
@@ -343,13 +343,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CheckMeIn/CheckMeIn.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Unburden/Unburden.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Check Me In";
+				INFOPLIST_KEY_CFBundleDisplayName = "Unburden";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.checkme.in;
+				PRODUCT_BUNDLE_IDENTIFIER = app.unburden.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -373,13 +373,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CheckMeIn/CheckMeIn.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Unburden/Unburden.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Check Me In";
+				INFOPLIST_KEY_CFBundleDisplayName = "Unburden";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -390,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.checkme.in;
+				PRODUCT_BUNDLE_IDENTIFIER = app.unburden.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		500 /* Build configuration list for PBXNativeTarget "CheckMeIn" */ = {
+		500 /* Build configuration list for PBXNativeTarget "Unburden" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				702 /* Debug */,
@@ -410,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		601 /* Build configuration list for PBXProject "CheckMeIn" */ = {
+		601 /* Build configuration list for PBXProject "Unburden" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				700 /* Debug */,
