@@ -76,7 +76,9 @@ struct WorryBoxView: View {
         .animation(.easeInOut(duration: 0.3), value: viewModel.inputText.isEmpty)
         .animation(.easeInOut(duration: 0.3), value: viewModel.showFadingText)
         .navigationTitle("Worry Box")
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+        #endif
     }
 }
 

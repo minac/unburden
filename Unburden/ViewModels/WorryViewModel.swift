@@ -18,9 +18,11 @@ final class WorryViewModel {
         showFadingText = true
         fadeOpacity = 1.0
 
-        // Haptic feedback
+        // Haptic feedback (iOS only)
+        #if os(iOS)
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
+        #endif
 
         // Save to iCloud in background
         Task {

@@ -79,7 +79,9 @@ struct GratitudeBoxView: View {
             }
         }
         .navigationTitle("Gratitude Box")
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+        #endif
         .task {
             await viewModel.loadGratitudes()
         }

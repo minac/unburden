@@ -63,7 +63,9 @@ struct MoodView: View {
         }
         .animation(.easeInOut(duration: 0.3), value: showConfirmation)
         .navigationTitle("Mood")
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+        #endif
         .onAppear {
             // Reset selection each time view appears
             selectedMoodThisSession = nil

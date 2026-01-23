@@ -21,9 +21,11 @@ final class GratitudeViewModel {
         let gratitude = Gratitude(text: inputText.trimmingCharacters(in: .whitespacesAndNewlines))
         inputText = ""
 
-        // Haptic feedback
+        // Haptic feedback (iOS only)
+        #if os(iOS)
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
+        #endif
 
         // Add to local array immediately for responsive UI
         withAnimation {

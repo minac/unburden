@@ -21,9 +21,11 @@ final class MoodViewModel {
     func selectMood(_ moodType: MoodType) {
         let entry = MoodEntry(mood: moodType)
 
-        // Haptic feedback
+        // Haptic feedback (iOS only)
+        #if os(iOS)
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
+        #endif
 
         // Update local array immediately
         withAnimation {
