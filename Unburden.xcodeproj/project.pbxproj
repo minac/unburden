@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001 /* UnburdenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101; };
-		002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102; };
-		003 /* WorryBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103; };
-		004 /* GratitudeBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104; };
-		005 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105; };
-		006 /* Worry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106; };
-		007 /* Gratitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107; };
-		008 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108; };
-		009 /* CloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109; };
-		010 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110; };
-		011 /* WorryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111; };
-		012 /* GratitudeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112; };
-		013 /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113; };
-		014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114; };
+		001 /* UnburdenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101 /* UnburdenApp.swift */; };
+		002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102 /* HomeView.swift */; };
+		003 /* WorryBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103 /* WorryBoxView.swift */; };
+		004 /* GratitudeBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104 /* GratitudeBoxView.swift */; };
+		005 /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105 /* MoodView.swift */; };
+		006 /* Worry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106 /* Worry.swift */; };
+		007 /* Gratitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107 /* Gratitude.swift */; };
+		008 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108 /* Mood.swift */; };
+		009 /* CloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109 /* CloudStorage.swift */; };
+		010 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110 /* ThemeManager.swift */; };
+		011 /* WorryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111 /* WorryViewModel.swift */; };
+		012 /* GratitudeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112 /* GratitudeViewModel.swift */; };
+		013 /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113 /* MoodViewModel.swift */; };
+		014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,7 +136,7 @@
 /* Begin PBXNativeTarget section */
 		400 /* Unburden */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 500;
+			buildConfigurationList = 500 /* Build configuration list for PBXNativeTarget "Unburden" */;
 			buildPhases = (
 				401 /* Sources */,
 				200 /* Frameworks */,
@@ -166,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 601;
+			buildConfigurationList = 601 /* Build configuration list for PBXProject "Unburden" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -348,12 +348,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Unburden/Unburden.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Unburden";
+				INFOPLIST_KEY_CFBundleDisplayName = Unburden;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -378,12 +379,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Unburden/Unburden.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Unburden";
+				INFOPLIST_KEY_CFBundleDisplayName = Unburden;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
