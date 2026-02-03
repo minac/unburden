@@ -10,14 +10,15 @@ A minimalist iOS journaling app to release worries, record gratitude, and track 
 
 ## Requirements
 
-- iOS 17.0+
+- iOS 17.0+ or macOS 14.0+
 - iCloud account (for data sync)
 
 ## Tech Stack
 
 - SwiftUI
 - MVVM architecture with `@Observable`
-- iCloud Documents for storage
+- iCloud Documents for storage (with local fallback)
+- Bundle ID: `app.unburden.ios`
 
 ## Privacy
 
@@ -27,7 +28,9 @@ All data is stored exclusively in your personal iCloud account. No analytics, no
 
 ## Development
 
-Open `Unburden.xcodeproj` in Xcode and build for iOS Simulator or device.
+Open `Unburden.xcodeproj` in Xcode and build for iOS Simulator, macOS, or device.
+
+Or run `./local-ci.sh` for headless build verification.
 
 ## License
 
